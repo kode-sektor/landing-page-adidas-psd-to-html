@@ -2,7 +2,7 @@
 
 ## This is a demo Adidas landing page to convert casual browsers to customers. The goal is to get people to pre-order the new shoe. The style is edgy, modern and urban.
 
-This is a demo Adidas landing page to convert casual browsers to customers. The design layout was created with Adobe XD, considering features that makes a landing page worth its name. The design does not encourage exploration; its aim is for that user to make that "call to action".
+This is a demo Adidas landing page to convert casual browsers to customers. The design layout was created with Adobe XD, considering features that makes a landing page worth its name. The design does not encourage exploration; its aim is for the user to make that "call to action".
 
 ***
 
