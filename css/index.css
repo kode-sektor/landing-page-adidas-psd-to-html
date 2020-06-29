@@ -1,0 +1,96 @@
+/*
+* Adidas v1.0 Default Stylesheet 
+* Author: Kay (Full-stack web developer)
+* Author Email: kayodeibiyemi92@gmail.com
+* Author URI: www.codeslave.com
+* Template Name: Fem-u-ra-X
+* Start date: 06-28-2020
+
+ 
+ __   __                          
+|  |_/  /
+|      /  
+|     /   __ ____   __
+|  '  \  / _` | |  | |          
+|  |\  \| (_| | |__| |
+|__| \__\\__,_|____. |        
+                   | |  
+                   | |
+             |_______|  
+                                                                 
+
+=====================================================================*/
+
+/*========  DOCUMENT ========*/
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+
+  /*Palette*/
+
+  --blue: #001480;
+  --red: #AA0000;
+
+  --link: #007BFF;
+  --link-hover: #D9534F;
+
+  /*shades of grey*/
+  --grey: #75797A;
+  --light-grey: #efefef;
+  --mid-grey: #A5A9AC;
+  --black: #000;
+  --white: #fff;
+
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+  /*Font families*/
+    
+  --font-primary: "Geo-Sans-Light", Calibri, sans-serif;
+  --font-secondary: Helvetica, Tahoma, Calibri, sans-serif;
+  --font-tertiary: "Oswald", Impact, sans-serif;
+}
+html{
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+	font-weight: 400;
+	min-width: 320px;
+	text-align: left;
+	background-color: #fff;
+	font-family: var(--font-primary);
+}
+h1 {
+  font-family: var(--font-tertiary);
+}
+h2 {
+  font-family: var(--font-secondary);
+}
+button, .btn, .cta {
+  font-family: var(--font-tertiary);
+}
+hr {
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid #fff;
+}
+a {
+    transition: 300ms;
+}
+
+a:link{
+  /*style only unvisited links*/
+}
+
+a:link, a:visited {
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover);
+  text-decoration: none;
+  outline: none;
+}
