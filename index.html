@@ -94,11 +94,11 @@
                         <div class="product-control">
                             <span id="product-colour"></span>
                             <div class="product-btn-set">
-                                <button id="gold" role="button" title="gold-marked-shoes"></button>
-                                <button id="black-matte" role="button" title="black-matte-marked-shoes"></button>
-                                <button id="prussian" role="button" title="prussian-marked-shoes"></button>
-                                <button id="platinum" role="button" title="platinum-marked-shoes"></button>
-                                <button id="crimson" role="button" title="crimson-marked-shoes"></button>
+                                <button id="gold" role="button" title="gold-marked-shoes" type="button"></button>
+                                <button id="black-matte" role="button" title="black-matte-marked-shoes" type="button"></button>
+                                <button id="prussian" role="button" title="prussian-marked-shoes" type="button"></button>
+                                <button id="platinum" role="button" title="platinum-marked-shoes" type="button"></button>
+                                <button id="crimson" role="button" title="crimson-marked-shoes" type="button"></button>
                             </div>
                             <p></p>
                             <hr>
@@ -119,7 +119,82 @@
                 
                 </section>
                 
-            <main>
+                <section class="usp">
+                    
+                    <h3 class="tab-title">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </h3>
+                    
+                    <section class="reviews">
+                        
+                        <div class="rating-stars">
+                            <span></span>
+                            <span></span>
+                        </div>   
+
+                        <section class="rating">
+                            <div class="rating-graph">
+                                <div class="bar">
+                                    
+                                    <dl class="rating-graph-bar">
+                                        <dt>5:</dt>
+                                        <dd><meter max="100" high="100" low="0" value="">6</meter><span class="rating-figure"></span>%</dd>
+
+                                        <dt>4:</dt>
+                                        <dd><meter max="100" high="100" low="0" value="">9</meter><span class="rating-figure"></span>%</dd>
+
+                                        <dt>3:</dt>
+                                        <dd><meter max="100" high="100" low="0" value="">7</meter><span class="rating-figure"></span>%</dd>
+
+                                        <dt>2:</dt>
+                                        <dd><meter max="100" high="100" low="0" value="">0</meter><span class="rating-figure"></span>%</dd>
+
+                                        <dt>1:</dt>
+                                        <dd><meter max="100" high="100" low="0" value="">7</meter><span class="rating-figure"></span>%</dd>
+                                    </dl>
+                                    
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="sort-reviews">
+                            <p class="review-count">Showing 1 - <span id="displayed-review-count">3</span> (out of <span id="review-total">20</span></p>
+                            <p>
+                                Sort by : <button id="helpful-reviews" role="button" type="button">Most Helpful</button> 
+                                Filter by : 
+                                <ul class="filter-reviews">
+                                    <li><button role="button" type="button">All</button></li>
+                                    <li><button role="button" type="button">All</button></li>
+                                    <li><button role="button" type="button">All</button></li>
+                                    <li><button role="button" type="button">All</button></li>
+                                </ul> 
+                            </p>
+                        </section>
+                    
+                        <ul class="comments">
+                            <li>
+                                <figure class="reviewer">
+                                    <img src="" alt="">
+                                    <figcaption class="reviewer-id"></figcaption>
+                                </figure>
+                                <article class="comments">
+                                    <div class="comment-body">
+                                        <h5>
+                                            <span class="stars"></span>
+                                            
+                                        </h5>
+                                        <p></p>
+                                    </div>                            
+                                </article>                        
+                            </li>
+                        </ul>
+
+                    </section>
+                    
+                </section>
+                
+            </main>
 
 
             <aside role="complementary">
@@ -127,13 +202,15 @@
             </aside>
 
             <footer id="page-footer" role="contentinfo"></footer>
+                
         </div>
                                         
         <!-- Script
         ================================================== -->
 
         <script type="text/javascript" src="js/index.js"></script>
+                    
+    </body>
 
-    </section></section></body>
         
 </html>
