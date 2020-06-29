@@ -99,6 +99,16 @@ a:focus {
 ul {
     list-style-type: none;
 }
+figcaption {
+    font-family: var(--font-tertiary);
+    font-weight: bolder;
+    text-transform: uppercase;
+    white-space: pre;
+    letter-spacing: 1px;
+    line-height: 45px;
+    font-size: 1.7em;
+    color: var(--white);;
+}
 .cta {
     display: block;
     white-space: pre;
@@ -132,26 +142,52 @@ header::before {
     content: "";
     width: 380px;
     height: 380px;
-    z-index: 1;
+    z-index: 0;
     transform: rotate(135deg);
     transform-origin: center;
     background: rgba(170, 0, 0, .5);
 }
 .header-container {
     width: 100%;
+    position: relative;
     background: url("../img/outdoor-hiking.png") no-repeat;
     background-size: cover;
+    z-index: 2;
 }
 .header-inner {
     width: 100%;
     min-height: 100%;
-    border: 2px solid white;
+    position: relative;
+    padding-right: 50px;
     background: rgba(0,0,0,.5);
+    z-index: 3;
+}
+.header-inner::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 23%;
+    background: hsla(0, 100%, 33%, .5);
+}
+.header-inner::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    height: 120%;
+    width: 75%;
+    border-right: thin solid var(--light-grey);
+    border-bottom: thin solid var(--light-grey);
+
 }
 .nav-container {
     display: flex;
+    position: relative;
+    z-index: 4;
     padding: 10px 30px;
-    border: 1px solid crimson;
 }
 .logo-frame {
     display: inline-block;
@@ -163,10 +199,8 @@ header::before {
     display: flex;
     justify-content: space-between;
     width: 65%;
-    border: 1px solid gold;
 }
 .main-nav-links {
-    border: 1px solid indigo;
 }
 .main-nav-links li {
     display: inline-block;
@@ -177,7 +211,16 @@ header::before {
 .main-nav-links li a {
     color: var(--white);
     line-height: 40px;
+    opacity: .8;
+    font-weight: lighter;
+    transition-property: opacity, lighter;
+    transition-timing-function: ease-in;
 }
+.main-nav-links li a:hover, .main-nav-links li a:focus {
+    opacity: 1;
+    font-weight: bold;
+ }
+
 label[for="page-index"] {
     position: absolute;
     width: 1px;
@@ -193,6 +236,8 @@ label[for="page-index"] {
     line-height: 40px;
     padding-left: 5px;
     width: 180px;
+    color: var(--white);
+    font-size: 1.2em;
     font-family: var(--font-primary);
     border: 1px solid var(--white);
 }
@@ -219,16 +264,14 @@ label[for="page-index"] {
 
 /*Supporting Text*/
 .supporting-text {
+    position: relative;
     padding-left: 100px;
-    padding-bottom: 100px;
-    border: 1px solid seashell;
+    padding-bottom: 50px;
+    z-index: 4;
 }
 .headline {
-    display: flex;
-    justify-content: space-between;
     padding: 20px 75px 15px 15px;
-    margin-bottom: 25px;
-    border: 1px solid aqua;
+    margin-bottom: 10px;
     color: var(--white);
     font-weight: bold;
     color: transparent;
@@ -241,7 +284,6 @@ label[for="page-index"] {
 }
 .supporting-text .content {
     display: flex;
-    border: 1px solid tan;
 }
 .supporting-text figure {
     display: block;
@@ -251,12 +293,28 @@ label[for="page-index"] {
     width: 75%;
     padding-left: 200px;
     padding-right: 50px;
-    border: 1px solid brown;
 }
 .supporting-text .content-text p {
     font-size: 1.4em;
     line-height: 1.5em;
     padding-top: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     color: var(--white);
+}
+.supporting-text .content figure {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.supporting-text .content figure img {
+    display: inline-block;
+    position: relative;
+    left: -75px;
+    top: 15px;
+}
+.supporting-text .content figure figcaption { 
+    position: absolute;
+    top: -70px;
+    left: 0;
+    right: 0;
 }
