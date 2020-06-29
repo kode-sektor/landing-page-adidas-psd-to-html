@@ -53,7 +53,7 @@
   --font-secondary: Helvetica, Tahoma, Calibri, sans-serif;
   --font-tertiary: "Oswald", Impact, sans-serif;
 }
-html{
+html {
   font-size: 100%;
   scroll-behavior: smooth;
 }
