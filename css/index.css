@@ -24,63 +24,65 @@
 /*========  DOCUMENT ========*/
 
 *, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 :root {
 
   /*Palette*/
 
-  --blue: #001480;
-  --red: #AA0000;
+    --blue: #001480;
+    --red: #AA0000;
 
-  --link: #007BFF;
-  --link-hover: #D9534F;
+    --link: #007BFF;
+    --link-hover: #D9534F;
 
-  /*shades of grey*/
-  --grey: #75797A;
-  --light-grey: #efefef;
-  --mid-grey: #A5A9AC;
-  --black: #000;
-  --white: #fff;
+    /*shades of grey*/
+    --grey: #75797A;
+    --light-grey: #efefef;
+    --mid-grey: #A5A9AC;
+    --black: #000;
+    --white: #fff;
 
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 
-  /*Font families*/
-    
-  --font-primary: "Geo-Sans-Light", Calibri, sans-serif;
-  --font-secondary: Helvetica, Tahoma, Calibri, sans-serif;
-  --font-tertiary: "Oswald", Impact, sans-serif;
+    /*Font families*/
+      
+    --font-primary: "Geo-Sans-Light", Calibri, sans-serif;
+    --font-secondary: Helvetica, Tahoma, Calibri, sans-serif;
+    --font-tertiary: "Oswald", Impact, sans-serif;
 }
 html {
-  font-size: 100%;
-  scroll-behavior: smooth;
+    font-size: 100%;
+    scroll-behavior: smooth;
 }
 body {
-	font-weight: 400;
-	min-width: 320px;
-	text-align: left;
-	background-color: #fff;
-	font-family: var(--font-primary);
+  	font-weight: 400;
+  	min-width: 320px;
+  	text-align: left;
+  	background-color: #fff;
+  	font-family: var(--font-primary);
 }
 h1 {
-  font-family: var(--font-tertiary);
+    font-family: var(--font-tertiary);
 }
 h2 {
-  font-family: var(--font-secondary);
+   font-family: var(--font-secondary);
 }
 button, .btn, .cta {
-  font-family: var(--font-tertiary);
+    font-family: var(--font-tertiary);
 }
 hr {
-  border-top: 1px solid var(--light-grey);
-  border-bottom: 1px solid #fff;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid #fff;
 }
 a {
     transition: 300ms;
 }
-
+nav a {
+    text-decoration: none;
+}
 a:link{
   /*style only unvisited links*/
 }
@@ -93,4 +95,70 @@ a:focus {
   color: var(--link-hover);
   text-decoration: none;
   outline: none;
+}
+ul {
+    list-style-type: none;
+}
+
+
+/*HEADER*/
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+    min-height: 500px;
+    background: #2B2222;
+    overflow: hidden;
+}
+header::before {
+    position: absolute;
+    left: -190px;
+    bottom: -190px;
+    content: "";
+    width: 380px;
+    height: 380px;
+    z-index: 1;
+    transform: rotate(135deg);
+    transform-origin: center;
+    background: rgba(170, 0, 0, .5);
+}
+.header-container {
+    width: 100%;
+    background: url("../img/outdoor-hiking.png") no-repeat;
+    background-size: cover;
+}
+.header-inner {
+    width: 100%;
+    min-height: 100%;
+    border: 2px solid white;
+    background: rgba(0,0,0,.5);
+}
+.nav-container {
+    display: flex;
+    padding: 10px 30px;
+    border: 1px solid crimson;
+}
+.logo-frame {
+    margin-right: auto;
+}
+.main-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border: 1px solid gold;
+}
+.main-nav-links li {
+    display: inline-block;
+}
+label[for="page-index"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
