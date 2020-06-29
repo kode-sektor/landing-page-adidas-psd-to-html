@@ -99,7 +99,20 @@ a:focus {
 ul {
     list-style-type: none;
 }
-
+.cta {
+    display: block;
+    white-space: pre;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 45px;
+    padding: 10px;
+    font-size: 35px;
+    color: var(--red);
+    border: thin solid var(--red);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s;
+}
 
 /*HEADER*/
 
@@ -202,4 +215,48 @@ label[for="page-index"] {
 }
 .page-search button .fa-search:hover, .page-search button .fa-search:focus {
     opacity: 1;
+}
+
+/*Supporting Text*/
+.supporting-text {
+    padding-left: 100px;
+    padding-bottom: 100px;
+    border: 1px solid seashell;
+}
+.headline {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 75px 15px 15px;
+    margin-bottom: 25px;
+    border: 1px solid aqua;
+    color: var(--white);
+    font-weight: bold;
+    color: transparent;
+    font-family: var(--font-primary);
+    text-shadow: 1px 1px 2px rgba(255,255,255,1);
+    text-align: right;
+    background: rgba(0,0,0,.8);
+}
+.headline span {
+}
+.supporting-text .content {
+    display: flex;
+    border: 1px solid tan;
+}
+.supporting-text figure {
+    display: block;
+    width: 25%;
+}
+.supporting-text .content-text {
+    width: 75%;
+    padding-left: 200px;
+    padding-right: 50px;
+    border: 1px solid brown;
+}
+.supporting-text .content-text p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding-top: 15px;
+    margin-bottom: 45px;
+    color: var(--white);
 }
