@@ -141,16 +141,29 @@ header::before {
     border: 1px solid crimson;
 }
 .logo-frame {
+    display: inline-block;
     margin-right: auto;
+    margin-top: 5px;
+    line-height: 40px;
 }
 .main-nav-bar {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
     border: 1px solid gold;
+}
+.main-nav-links {
+    border: 1px solid indigo;
 }
 .main-nav-links li {
     display: inline-block;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+.main-nav-links li a {
+    color: var(--white);
+    line-height: 40px;
 }
 label[for="page-index"] {
     position: absolute;
@@ -161,4 +174,32 @@ label[for="page-index"] {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+.page-search input {
+    background: transparent;
+    line-height: 40px;
+    padding-left: 5px;
+    width: 180px;
+    font-family: var(--font-primary);
+    border: 1px solid var(--white);
+}
+.page-search button {
+    position: relative;
+    right: 45px;
+    line-height: 40px;
+    padding: 0 10px;
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+.page-search button .fa-search {
+    font-size: 1.5em;
+    color: white;
+    opacity: .7;
+    transition: opacity .2s;
+}
+.page-search button .fa-search:hover, .page-search button .fa-search:focus {
+    opacity: 1;
 }
