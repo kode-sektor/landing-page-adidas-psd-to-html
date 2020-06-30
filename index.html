@@ -139,15 +139,17 @@
                     <section class="usp">
                         
                         <h3 class="tab-title">
-                            <a href="#"></a>
-                            <a href="#"></a>
+                            <a id="overview-tab-btn" href="#">Overview</a>
+                            <a id="reviews-tab-btn" href="#">Reviews</a>
                         </h3>
                         
                         <section class="reviews">
                             
                             <div class="rating-stars">
-                                <span></span>
-                                <span></span>
+                                <span class="score">4.1</span>
+                                <span class="score-stars">
+                                    <img src="img/4-stars.png" alt="4 stars">
+                                </span>
                             </div>   
 
                             <section class="rating">
@@ -155,20 +157,20 @@
                                     <div class="bar">
                                         
                                         <dl class="rating-graph-bar">
-                                            <dt>5:</dt>
-                                            <dd><meter max="100" high="100" low="0" value="">6</meter><span class="rating-figure"></span>%</dd>
+                                            <dt>5 <span class="fa fa-star"></span>:</dt>
+                                            <dd><meter id="5-star-rating" max="100" high="100" low="0" value="40"></meter><span class="rating-figure">27</span>%</dd>
 
-                                            <dt>4:</dt>
-                                            <dd><meter max="100" high="100" low="0" value="">9</meter><span class="rating-figure"></span>%</dd>
+                                            <dt>4 <span class="fa fa-star"></span>:</dt>
+                                            <dd><meter  id="4-star-rating" max="100" high="100" low="0" value="40"></meter><span class="rating-figure">44</span>%</dd>
 
-                                            <dt>3:</dt>
-                                            <dd><meter max="100" high="100" low="0" value="">7</meter><span class="rating-figure"></span>%</dd>
+                                            <dt>3 <span class="fa fa-star"></span>:</dt>
+                                            <dd><meter id="3-star-rating" max="100" high="100" low="0" value="40"></meter><span class="rating-figure">28</span>%</dd>
 
-                                            <dt>2:</dt>
-                                            <dd><meter max="100" high="100" low="0" value="">0</meter><span class="rating-figure"></span>%</dd>
+                                            <dt>2 <span class="fa fa-star"></span>:</dt>
+                                            <dd><meter id="2-star-rating" max="100" high="100" low="0" value="40"></meter><span class="rating-figure">1</span>%</dd>
 
-                                            <dt>1:</dt>
-                                            <dd><meter max="100" high="100" low="0" value="">7</meter><span class="rating-figure"></span>%</dd>
+                                            <dt>1 <span class="fa fa-star"></span>:</dt>
+                                            <dd><meter id="1-star-rating" max="100" high="100" low="0" value="40"></meter><span class="rating-figure">0</span>%</dd>
                                         </dl>
                                         
                                     </div>
@@ -176,7 +178,7 @@
                             </section>
 
                             <section class="sort-reviews">
-                                <p class="review-count">Showing 1 - <span id="displayed-review-count">3</span> (out of <span id="review-total">20</span></p>
+                                <p class="review-count">Showing 1 - <span id="displayed-review-count">3</span> (out of <span id="review-total">20</span>)</p>
                                 <p>
                                     Sort by : <button id="helpful-reviews" role="button" type="button">Most Helpful</button> 
                                     Filter by : 
