@@ -108,7 +108,14 @@ p {
     margin-bottom: 12px
 }
 p a, p a:visited { line-height: inherit; }
-
+img {
+    /*display: block;*/
+   max-width: 100%;
+   height: auto;
+   border: none;
+   overflow: hidden;
+   margin: auto;            
+},
 figcaption {
     font-family: var(--font-tertiary);
     font-weight: bolder;
@@ -323,6 +330,7 @@ label[for="page-index"] {
     position: relative;
     left: -75px;
     top: 15px;
+    max-width: none;
 }
 .supporting-text .content figure figcaption { 
     position: absolute;
@@ -341,15 +349,14 @@ main {
 .commercial {
     display: flex;
     text-align: center;
+    margin-bottom: 45px;
 }
 .supporting-title {
     margin-bottom: 15px;
 }
 .commercial .supporting-text {
     width: 60%;
-}
-.showglass {
-    width: 40%;
+    padding: 10px 25px;
 }
 .product-btn-set {
     margin-bottom: 15px;
@@ -402,3 +409,26 @@ p.lead {
 .pain-points li {
     padding: 5px;
 }
+
+/*Show glass*/
+.showglass {
+    width: 40%;
+    position: relative;
+    height: inherit;
+}
+.showglass > figure {
+    height: 100%;
+    padding: 20px 20px 100px;
+}
+.showglass .cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transition-property: all;
+}
+.showglass .cta:hover, .showglass .cta:focus {
+    background: var(--red);
+    color: snow;
+ }
