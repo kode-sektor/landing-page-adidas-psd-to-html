@@ -76,6 +76,7 @@ button, .btn, .cta {
 hr {
     border-top: 1px solid var(--light-grey);
     border-bottom: 1px solid #fff;
+    margin-bottom: 17px;
 }
 a {
     transition: 300ms;
@@ -99,6 +100,15 @@ a:focus {
 ul {
     list-style-type: none;
 }
+main ul li {
+    font-size: 1.3em;
+}
+p {
+    font-size: 1.3em;
+    margin-bottom: 12px
+}
+p a, p a:visited { line-height: inherit; }
+
 figcaption {
     font-family: var(--font-tertiary);
     font-weight: bolder;
@@ -122,6 +132,9 @@ figcaption {
     text-transform: uppercase;
     text-decoration: none;
     transition: .2s;
+}
+.lead {
+    font-size: 1.2em;
 }
 
 /*HEADER*/
@@ -220,7 +233,6 @@ header::before {
     opacity: 1;
     font-weight: bold;
  }
-
 label[for="page-index"] {
     position: absolute;
     width: 1px;
@@ -317,4 +329,76 @@ label[for="page-index"] {
     top: -70px;
     left: 0;
     right: 0;
+}
+
+main {
+    padding: 100px 0;
+}
+.main-container {
+    border: 1px solid cyan;
+    margin: 0 auto;
+}
+.commercial {
+    display: flex;
+    text-align: center;
+}
+.supporting-title {
+    margin-bottom: 15px;
+}
+.commercial .supporting-text {
+    width: 60%;
+}
+.showglass {
+    width: 40%;
+}
+.product-btn-set {
+    margin-bottom: 15px;
+}
+.product-btn-set button {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+.product-control span {
+    display: inline-block;
+    margin-bottom: 13px;
+}
+
+button#gold {
+    background-color: #DAA521;
+}
+button#black-matte {
+    background-color: #262626;
+}
+button#prussian {
+    background-color: #0047AB;
+}
+button#platinum {
+    background-color: #0047AB;
+}
+button#crimson {
+    background-color: #AA0000;
+}
+.product-control p {
+    margin-bottom: 12px;
+}
+main .supporting-text article {
+    font-family: var(--font-secondary);
+    font-weight: lighter;
+}
+p.lead {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 12px;
+}
+.pain-points {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: left;
+    border: thin solid var(--light-grey);
+}
+.pain-points li {
+    padding: 5px;
 }

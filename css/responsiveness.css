@@ -8,7 +8,10 @@
 }
 
 @media (min-width: 62rem) {
-    
+    .main-container {
+        width: 100%;
+        max-width: 1170px
+    }
 }
 
 @media (min-width: 75rem) {
