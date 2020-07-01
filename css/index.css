@@ -344,7 +344,6 @@ main {
     padding: 100px 0;
 }
 .main-container {
-    border: 1px solid cyan;
     margin: 0 auto;
 }
 .commercial {
@@ -516,7 +515,6 @@ p.lead {
 .filter-reviews {
     display: inline-block;
     margin: 0;
-    border: 1px solid gold;
 }
 .overview {
     display: none;
@@ -621,16 +619,108 @@ select::after {
 .gallery {
     display: grid;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 3fr 2fr;
-    height: 400px;
-    border: 1px solid orchid;
+    grid-template-rows: 300px 200px;
+    min-height: 500px;
     background: rgba(239, 239, 239, .3);
 }
 .gallery > figure {
-    /background-color: azure;
-    border: 2px solid navy;
+   position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+.gallery > figure:first-child .grouped-img {
+    background-color: #F7F7F7;
 }
 .gallery > figure:nth-child(3) {
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
+    background-image: url("../img/shoe-10.jpg");
+    background-size: cover;
+}
+.grouped-img {
+    display: flex;
+    position: relative;
+    padding: 5px 5px 0 25px;
+    height: 100%;
+    width: 145%;
+    z-index: 3;
+    overflow: hidden;
+    background: rgba(239, 239, 239, .3);
+}
+.grouped-img img {
+    height: auto;
+    transform: scale(.7);
+}
+.grouped-img.sneakers {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.grouped-img.sneakers img {
+    display: inline-block;
+    min-height: 200px;
+    transform: none;
+    max-width: none;
+}
+.gallery > figure:first-child {
+    z-index: 3;
+    overflow: visible;
+}
+.gallery > figure:nth-child(2) {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+    background: url("../img/shoe-8.jpg") no-repeat ;
+    background-size: cover;
+}
+.gallery > figure:nth-child(2) > div {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100%;
+    height: inherit;
+}
+.gallery > figure:nth-child(2) > div img  {
+    width: 100%;
+}
+.gallery figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -100%;
+    z-index: 4;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 30px 20px;
+    text-align: center;
+    background: rgba(170, 0, 0, .9);
+    transition: top .2s;
+}
+.gallery > figure:hover figcaption, .gallery > figure:focus figcaption,
+.grouped-img:hover + figcaption, .grouped-img:focus + figcaption {
+    top: 0;
+}
+.gallery figcaption a {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-flow: column wrap;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: snow;
+    border: 1px solid white;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-primary);
+}
+.gallery > figure:nth-child(2) figcaption a {
+    justify-content: flex-end;
+}
+.gallery > figure:last-child figcaption a {
+    font-size: .8em;
 }
