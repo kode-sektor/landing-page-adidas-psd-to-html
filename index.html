@@ -180,30 +180,59 @@
                             <section class="sort-reviews">
                                 <p class="review-count">Showing 1 - <span id="displayed-review-count">3</span> (out of <span id="review-total">20</span>)</p>
                                 <p>
-                                    Sort by : <button id="helpful-reviews" role="button" type="button">Most Helpful</button> 
+                                    Sort by :
+                                    <span class="select">
+                                        <select name="slct" id="helpful-reviews">
+                                            <option value="1">Most Helpful</option>
+                                            <option value="2">No JS</option>
+                                            <option value="3">Nice!</option>
+                                        </select>
+                                    </span>     
+                                </p>
+                                <p class="filter-by">
                                     Filter by : 
-                                    </p><ul class="filter-reviews">
-                                        <li><button role="button" type="button">All</button></li>
-                                        <li><button role="button" type="button">All</button></li>
-                                        <li><button role="button" type="button">All</button></li>
-                                        <li><button role="button" type="button">All</button></li>
-                                    </ul> 
-                                <p></p>
-                            </section>
+                                    <span class="select">
+                                        <select name="slct" id="slct">
+                                            <option value="1">All</option>
+                                            <option value="2">No JS</option>
+                                            <option value="3">Nice!</option>
+                                        </select>
+                                    </span>                                               
+                            </p></section>
                         
                             <ul class="comments">
                                 <li>
                                     <figure class="reviewer">
-                                        <img src="" alt="">
-                                        <figcaption class="reviewer-id"></figcaption>
+                                        <img src="img/sarai.png" alt="Sarai avatar">
+                                        <figcaption class="reviewer-id">Sarai</figcaption>
                                     </figure>
-                                    <article class="comments">
+                                    <article class="comment">
                                         <div class="comment-body">
                                             <h5>
-                                                <span class="stars"></span>
-                                                
+                                                <span class="stars"><img src="img/4-stars.png"></span>
+                                                <span class="blurb">Very Convenient</span>    
                                             </h5>
-                                            <p></p>
+                                            <blockquote>
+                                                <p>If there's one thing I can vouch for; it's that you could wear this sweety all day without the slightest inconvenience.</p>
+                                            </blockquote>
+                                        </div>                            
+                                    </article>                        
+                                </li>
+                                <li>
+                                    <figure class="reviewer">
+                                        <img src="img/joel.png" alt="Joel avatar">
+                                        <figcaption class="reviewer-id">Joel</figcaption>
+                                    </figure>
+                                    <article class="comment">
+                                        <div class="comment-body">
+                                            <h5>
+                                                <span class="stars"><img src="img/4-stars.png"></span>
+                                                <span class="blurb">Just Buy It</span>    
+                                            </h5>
+                                            <blockquote>
+                                                <p>Well padded shoe, nice lace and comfortable.</p>
+                                                <p>Purchased this in its earliest days: You’ll get high-mileage wear from the weather element-resistant rubber outsole. There are also no weak spots on the thick mesh.</p>
+                                            </blockquote>
                                         </div>                            
                                     </article>                        
                                 </li>
@@ -212,9 +241,10 @@
                         </section>
                     
                         <section class="overview">                        
-                            <h4>Overview</h4>                        
-                            <p>Adidas Femura is a new  and multi-purpose design brand for athletes and hikers of all kinds. Creators, who love to change the game. Challenge conventions. Break the rules and define new ones. This is footwear that gets you to that proverbial finish line...and over. From low to high impact Women are not left out too. Feet comfort is not a prerogative; it's a sine quan non. The Femuara is a testament to our new technologies in action. On the pitch, the tracks, the court or on the hills. It's classic -- and will stand the test of time.
-                            </p>                
+
+                            <p>Adidas Femura is a new  and multi-purpose design brand for athletes and hikers of all kinds. Creators, who love to change the game. Challenge conventions. Break the rules and define new ones. This is footwear that gets you to that proverbial finish line...and over. From low to high impact Women are not left out too. <strong>Feet comfort is not a prerogative; it's a sine quan non</strong>. The Femura is a testament to our new technologies in action. On the pitch, the tracks, the court or on the hills. It's classic -- and will stand the test of time.
+                            </p> 
+
                         </section>
                         
                     </section>

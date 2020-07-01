@@ -58,7 +58,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-  	font-weight: 400;
   	min-width: 320px;
   	text-align: left;
   	background-color: #fff;
@@ -115,7 +114,7 @@ img {
    border: none;
    overflow: hidden;
    margin: auto;            
-},
+}
 figcaption {
     font-family: var(--font-tertiary);
     font-weight: bolder;
@@ -473,7 +472,6 @@ p.lead {
 }
 .rating {
     flex-grow: 1;
-    border: 1px solid turquoise;
 }
 .sort-reviews {
     order: 2;
@@ -502,4 +500,112 @@ p.lead {
 .rating-figure  {
     margin-left: 10px;
 }
+.review-count, .review-count + p, .filter-by {
+    font-weight: 900;
+    display: inline-block;
+    margin-bottom: 39px;
+}
+.review-count, .review-count + p  button, .filter-reviews button {
+    margin-right: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+}
+.filter-reviews {
+    display: inline-block;
+    margin: 0;
+    border: 1px solid gold;
+}
+.overview {
+    display: none;
+    padding: 20px 165px;
+}
+.overview p {
+    line-height: 45px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    position: relative;
+    display: inline-flex;
+    padding: 1px 25px 1px 0;
+    height: 2em;
+    line-height: 3;
+    overflow: hidden;
+}
+select {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    color: var(--link);
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: .8em;
+    background: transparent;
+}
 
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    line-height: inherit;
+    padding: 0 1em;
+    font-size: .8em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+    z-index: 2;
+}
+.select:hover::after {
+    color: var(--red);
+}
+
+/*Comments*/
+.comments {
+    width: 100%;
+    order: 3;
+    background: rgba(239, 239, 239, .3);
+}
+.comments > li {
+    display: flex;
+    padding: 25px 20px;
+}
+.reviewer {
+   flex-basis: 25%;
+}
+.comment {
+    flex-basis: 75%;
+    flex-grow: 1;
+}
+.comment-body .stars {
+    display: block;
+    max-width: 80px;
+    margin-bottom: 12px;
+}
+.blurb {
+}
+.comment-body p {
+    font-size: 20px;    
+    margin-top: 17px;
+    font-family: var(--font-secondary);
+}
+.reviewer-id {
+    position: relative;
+    color: var(--black);
+    font-size: .8em;
+    text-align: center;
+    bottom: 40px;
+}
