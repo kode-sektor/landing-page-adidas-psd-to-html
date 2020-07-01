@@ -740,9 +740,9 @@ select::after {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    display: grid;
-    grid-auto-rows : min-content;
-    grid-template-columns: repeat(4, 3fr);
+
+    display: flex;
+    flex-flow: column wrap;
     padding: 20px 40px;
     text-align: center;
 }

@@ -120,9 +120,20 @@
         min-height: 500px;
         background: rgba(239, 239, 239, .3);
     }
+    .gallery > figure:first-child .grouped-img {
+        background-color: #F7F7F7;
+        width: 145%;
+    }
     .gallery > figure:last-child figcaption a {
         font-size: .8em;
     }
+
+    .primary-links {
+        display: grid;
+        grid-auto-rows : min-content;
+        grid-template-columns: repeat(4, 3fr);
+    }
+
 }
 
 @media (min-width: 62rem) {
