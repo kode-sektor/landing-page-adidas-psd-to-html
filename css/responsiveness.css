@@ -55,6 +55,9 @@
     .supporting-text .content {
         flex-flow: row;
     }
+    .supporting-text .content figure {
+    	border: 0;
+    }
     .supporting-text .content figure figcaption { 
         position: absolute;
         top: -70px;

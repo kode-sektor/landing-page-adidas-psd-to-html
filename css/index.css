@@ -208,12 +208,15 @@ header::before {
     top: 54px;
     right: 0;
     min-width: 220px;
-    display: flex;
+    display: none;
     flex-flow: column wrap;
     padding: 20px 0px;
     text-align: center;
     z-index: 5;
     background: rgba(255, 255, 255, .8);
+}
+.show.main-nav-links {
+    display: flex;
 }
 .main-nav-links li {
     /*display: inline-block;*/
@@ -246,6 +249,7 @@ header::before {
 #nav-toggle {
     color: var(--white);
     margin-top: 5px;
+    cursor: pointer;
 }
 label[for="page-index"] {
     position: absolute;
@@ -330,6 +334,7 @@ label[for="page-index"] {
     position: relative;
     display: block;
     text-align: center;
+    border: 2px solid var(--red);
 }
 .supporting-text .content figure img {
     display: inline-block;
@@ -752,7 +757,7 @@ select::after {
     white-space: pre;
     padding: 10px 5px;
     color: #fff;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-bottom: thin solid var(--red);
 }
 .page-footer  a {
