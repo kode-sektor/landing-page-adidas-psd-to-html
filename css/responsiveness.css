@@ -112,6 +112,17 @@
     }
 
 
+    /*Recent Products*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 300px 200px;
+        min-height: 500px;
+        background: rgba(239, 239, 239, .3);
+    }
+    .gallery > figure:last-child figcaption a {
+        font-size: .8em;
+    }
 }
 
 @media (min-width: 62rem) {

@@ -627,9 +627,8 @@ select::after {
     margin-bottom: 23px;
 }
 .gallery {
-    display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 300px 200px;
+    display: flex;
+    flex-flow: column wrap;
     min-height: 500px;
     background: rgba(239, 239, 239, .3);
 }
@@ -652,7 +651,6 @@ select::after {
     position: relative;
     padding: 5px 5px 0 25px;
     height: 100%;
-    width: 145%;
     z-index: 3;
     overflow: hidden;
     background: rgba(239, 239, 239, .3);
@@ -730,9 +728,6 @@ select::after {
 }
 .gallery > figure:nth-child(2) figcaption a {
     justify-content: flex-end;
-}
-.gallery > figure:last-child figcaption a {
-    font-size: .8em;
 }
 
 /*Footer*/
