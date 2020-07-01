@@ -464,9 +464,12 @@ p.lead {
     font-family: var(--font-primary);
 }
 .reviews, .overview {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     padding: 20px;
+}
+.reviews.open, .overview.open {
+    display: flex;
 }
 .rating-stars {
     display: flex;

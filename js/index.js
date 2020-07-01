@@ -29,5 +29,25 @@ for (let i=0; i < $btnColours.length; i++) {	// If clicked, cycle and fetch id o
 
 
 
+// Tab Functionality
 
+// Listen to click event on tab menus and apply helper class 
+// responsible for toggling the view of the target panel
 
+const $overview = document.getElementById("overview-tab-btn");
+const $reviews = document.getElementById("reviews-tab-btn");
+
+const $overviewSection = document.querySelector(".overview");
+const $reviewsSection = document.querySelector(".reviews");
+
+$overview.addEventListener('click', (e) => {
+	e.preventDefault();
+	$overviewSection.classList.add('open');
+	$reviewsSection.classList.remove('open');
+});
+
+$reviews.addEventListener('click', (e) => {
+	e.preventDefault();
+	$reviewsSection.classList.add('open');
+	$overviewSection.classList.remove('open');
+});
