@@ -728,7 +728,6 @@ select::after {
 /*Footer*/
 .page-footer {
     border: 1px solid;
-    border-color: crimson;
     font-family: var(--font-tertiary);
     background: #100F0D;
 }
@@ -760,6 +759,27 @@ select::after {
 .page-footer  a:hover, .page-footer  a:focus {
     color: var(--red);
 }
-
-
-
+.secondary-links {
+    background: rgba(170, 0, 0, .5);
+}
+.secondary-links > ul {
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    padding: 20px 30px;
+    font-family: var(--font-tertiary);
+}
+.secondary-links > ul li {
+    padding: 3px 7px;
+    color: var(--white);
+}
+.secondary-links > ul li a {
+    font-family: var(--font-tertiary);
+}
+.secondary-links .brand {
+    margin-right: 10px;
+}
+.secondary-links > ul li:first-child {
+    margin-right: auto;
+}
