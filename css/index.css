@@ -71,6 +71,7 @@ h2 {
 }
 button, .btn, .cta {
     font-family: var(--font-tertiary);
+    cursor: pointer;
 }
 hr {
     border-top: 1px solid var(--light-grey);
@@ -394,7 +395,7 @@ button#prussian {
     background-color: #0047AB;
 }
 button#platinum {
-    background-color: #0047AB;
+    background-color: #E5E4E2;
 }
 button#crimson {
     background-color: #AA0000;
