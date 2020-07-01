@@ -613,7 +613,7 @@ select::after {
     padding: 20px 15px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.6em;
     margin-bottom: 23px;
 }
 .gallery {
@@ -724,3 +724,42 @@ select::after {
 .gallery > figure:last-child figcaption a {
     font-size: .8em;
 }
+
+/*Footer*/
+.page-footer {
+    border: 1px solid;
+    border-color: crimson;
+    font-family: var(--font-tertiary);
+    background: #100F0D;
+}
+.primary-links {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows : min-content;
+    grid-template-columns: repeat(4, 3fr);
+    padding: 20px 40px;
+    text-align: center;
+}
+.primary-links h5 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    white-space: pre;
+    padding: 10px 5px;
+    color: #fff;
+    margin-bottom: 20px;
+    border-bottom: thin solid var(--red);
+}
+.page-footer  a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: lighter;
+    font-family: var(--font-secondary);
+}
+.page-footer  a:hover, .page-footer  a:focus {
+    color: var(--red);
+}
+
+
+
