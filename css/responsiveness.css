@@ -199,7 +199,11 @@
     }
     .supporting-text .content figure img {
         transform: scale(1.0);
+        transition: transform .3s ease-in;
     }
+    .supporting-text .content figure img.about-to-buy {
+    	transform: scale(1.05) rotateZ(5deg);
+	}
     .supporting-text {
         padding-left: 100px;
     }

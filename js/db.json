@@ -1,0 +1,71 @@
+{
+
+   "comments"  : [
+        {
+            "name" : "Sarai",
+            "blurb" : "Very Convenient",
+            "comment" : "If there's one thing I can vouch for; it's that you could wear this sweety all day without the slightest inconvenience.",
+            "rating" : 4,
+            "imgPath" : "sarai.png"
+        },
+        {
+            "name" : "Joel",
+            "blurb" : "Just Buy It",
+            "comment" : "Well padded shoe, nice lace and comfortable.Purchased this in its earliest days: You’ll get high-mileage wear from the weather element-resistant rubber outsole. There are also no weak spots on the thick mesh.",
+            "rating" : 4,
+            "imgPath" : "joel.png"
+        },
+        {
+            "name" : "Bhullar",
+            "blurb" : "Amount of Rubber",
+            "comment" : "The outsole has a lot of grooves exposing the midsole foam. This helps the outsole telescope into the foam during the gait cycle to reduce wear and tear but also provide durable traction at the same time.",
+            "rating" : 3,
+            "imgPath" : "bhullar.png"
+        },
+        {
+            "name" : "Coletta",
+            "blurb" : "Long-lasting",
+            "comment" : "The midsole is bulletproof; the expanded Polyurethane foam lasts forever without losing its cushioning properties.",
+            "rating" : 3,
+            "imgPath" : "coletta.png"
+        },        
+        {
+            "name" : "Fabio",
+            "blurb" : "Smooth Like Wheels",
+            "comment" : "Adidas  calls its translucent outsole ‘crystal rubber’ and boy, does this material last long. It doesn’t grip as well as traditional rubber on damp surfaces, but it makes up for it with a 400+ mile lifespan.",
+            "rating" : 5,
+            "imgPath" : "fabio.png"
+        },        
+        {
+            "name" : "Forte",
+            "blurb" : "The Limousine of Shoes",
+            "comment" : "Expect several hundred miles of trouble-free running from this set-up.",
+            "rating" : 5,
+            "imgPath" : "forte.png"
+        },        
+        {
+            "name" : "Guilherme",
+            "blurb" : "As far as speed goes...",
+            "comment" : "Expect 500-600 miles out of the Pwrrun+ and the translucent rubber outsole combo.",
+            "rating" : 3,
+            "imgPath" : "guilherme.png"
+        },
+        {
+            "name" : "Janusha",
+            "blurb" : "Built with Technique",
+            "comment" : "My experience was positive, the boots are authentic, and I saved about $30. Don't swear it. The site is owned by Walmart and fully legit.",
+            "rating" : 3,
+            "imgPath" : "Janusha.png"
+        },
+        {
+            "name" : "Janusha",
+            "blurb" : "Don't mind Neagative  Reviews",
+            "comment" : "Like all the other positive reviews, I was very skeptical purchasing shoes from this website...simply because the negatives far outweighed the positive reviews. However, after reading the recent good experiences people had I decided to take a chance and I am so glad I did!.",
+            "rating" : 3,
+            "imgPath" : "Janusha.png"
+        }
+
+
+    ]
+
+}

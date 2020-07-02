@@ -51,3 +51,20 @@ $reviews.addEventListener('click', (e) => {
 	$reviewsSection.classList.add('open');
 	$overviewSection.classList.remove('open');
 });
+
+
+/*Animation when interacting with CTA*/
+
+const cta = document.querySelector('.content-text .cta');
+const heroImg = document.getElementById('hero-img');
+
+
+// this handler will be executed only once when the cursor moves over the unordered list
+cta.addEventListener("mouseenter", function( event ) { 
+	  heroImg.classList.add('about-to-buy');
+}, false);
+
+cta.addEventListener("mouseleave", function( event ) { 
+	  heroImg.classList.remove('about-to-buy');
+}, false);
+
