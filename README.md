@@ -1,5 +1,7 @@
 GITHUB PAGES: https://kode-sektor.github.io/landing-page-adidas-psd-to-html/index.html
 
+<img src="img/adidas-landing-page.png" alt="poster image" />
+
 # LANDING-PAGE-ADIDAS-XD-TO-HTML
 
 ## This is a demo Adidas landing page to convert casual browsers to customers. The goal is to get people to pre-order the new shoe. The style is edgy, modern and urban.
